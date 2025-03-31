@@ -1,0 +1,74 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+
+.logo{
+  width: 200px;
+}
+
+.nav-items ul{
+  display: flex;
+  padding: 30px 30px;
+
+}
+
+
+.nav-items ul li{
+ padding: 15px;
+ list-style-type: none;
+ font-weight: bold;
+ font-size:larger;
+ cursor: pointer;
+}
+
+.res-card{
+  padding: 8px;
+  width: 280px;
+ overflow: hidden;
+ text-align: center;
+  border-radius: 10px;
+  margin: 2px;
+  height: 500px;
+   
+}
+.res-card:hover{
+  border: 1px solid black;
+}
+
+.res-logo{
+   height: 260px;
+  width: 100%;
+   background-size: cover;
+   background-position: center;
+ border-radius: 10px;
+ cursor: pointer;
+  
+}
+
+.res-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Filter{
+  display: flex;
+  margin: 20px;
+  justify-content: space-around;
+}
+
+.shim-container
+{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.shim-card{
+  width: 250px;
+  height: 400px;
+  background-color: #f0f0f0;
+  margin: 10px;
+  border-radius: 10px;
+}
