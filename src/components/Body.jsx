@@ -45,12 +45,11 @@ import UserContext from "../utils/UserContext"
   }
 
 
-
       return  listofrestaurants.length===0 ? <Shimmer/> :( 
         <div className='body'>          
           <div className='flex m-10  items-center'>
-          <div className="">
-            <input type="text"
+          <div>
+              <input type="text"
               className="border border-solid border-black p-2 ml-10 w-60 font-medium "
               placeholder="Enter Text" 
               value={searchtext}

@@ -9,6 +9,7 @@ const RestaurantCategory=({category,showIndex,setShowIndex})=>{
     }
 
 //console.log("category",category)
+
    return (
   <div>
    <div className=" w-6/12 mx-auto my-4  mt-6 shadow-lg p-4" onClick={ClickShowItems}>
@@ -16,7 +17,7 @@ const RestaurantCategory=({category,showIndex,setShowIndex})=>{
  <span className="font-bold">{category.title}({category.itemCards.length})</span>
  <span>🔽</span>
  </div>
- {showIndex && <ItemList items={category.itemCards}/>}  
+ {showIndex && <ItemList items={category.itemCards}/>} 
   </div>
   </div>
    )

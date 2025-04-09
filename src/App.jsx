@@ -4,7 +4,8 @@ import Body from './components/Body';
 import { Outlet } from 'react-router-dom';
 import { useState } from 'react';
 import UserContext from './utils/UserContext';
-
+import { Provider } from 'react-redux';
+import appStore from './utils/appStore';
 
 
 
@@ -22,6 +23,7 @@ function App() {
 //},[])
 
   return (    
+    <Provider store={appStore}>
     <UserContext.Provider value={{loggedInUser:userName,setUserName}}>
     <div className='app'>
       <UserContext.Provider value={{loggedInUser:userName}}>    
@@ -30,6 +32,7 @@ function App() {
    <Outlet/>   
     </div>    
     </UserContext.Provider>
+    </Provider>
   )
 }
 
